@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+	font-family: "Lato", sans-serif;
+	line-height: 160%;
+	color: #424551;
+}
+
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	padding: 70px;
+	padding-top: 80px;
+}
+
+h1 {
+	text-align: center;
+    font-size: 37px;
+    font-weight: 900;
+    margin-bottom: 100px;
+}
+
+.transform__block {
+	border-radius: 150px;
+    width: 300px;
+    height: 300px;
+    background-color: plum;
+    margin: 0 auto;
+	position: relative;
+	margin-bottom: 100px;
+} 
+
+.transform__block--translate {
+	margin-bottom: 120px;
+}
+
+.translate {
+	border-radius: 150px;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(247, 14, 247);
+    margin: 0 auto;
+	transform: translate(15%, 20%);
+}
+
+.title {
+	position: absolute;
+	display: inline-block;
+    font-size: 31px;
+	top: 128px;
+    left: 82px;
+}
+
+.scale, .rotate, .skew, .perspective, .style  {
+	border-radius: 150px;
+    width: 300px;
+    height: 300px;
+	margin: 0 auto;
+}
+
+.title--scale {
+	left: 108px;
+}
+
+.scale:hover {
+    background-color: rgb(129, 61, 129);
+	transform: scale(1.3);
+}
+
+.title--rotate {
+	left: 100px;
+}
+
+.rotate:hover {
+	border-radius: 0px;
+	background-color: rebeccapurple;
+	transform: rotate(20deg);
+}
+
+.title--skew {
+	left: 109px;
+}
+
+.skew:hover {
+	background-color: rgb(235, 204, 235);
+	transform: skew(-20deg, 10deg);
+}
+
+.title--perspective {
+	left: 75px;
+}
+
+.transform__block--perspective {
+	perspective: 300px;
+	perspective-origin:top;
+	border-radius: 0px;
+}
+
+.perspective:hover {
+	background-color: rgb(104, 4, 104);
+	transform: rotateX(50deg);
+	border-radius: 0px;
+}
+
+.title--style {
+	left: 112px;
+}
+
+.transform__block--style {
+	perspective: 300px;
+	transform-style: preserve-3d;
+	border-radius: 0px;
+	background-color: transparent;
+}
+
+.style {
+	transform: rotateY(0deg);
+	border-radius: 0px;
+	background-color: palevioletred;
+}
+
+.transform__block--style:hover .style {
+	
+	transform: rotateY(50deg);
+}
+
+.tree {
+	margin: 0 auto;
+    background: url(../img/Christmas+Tree.webp) no-repeat center;
+    height: 675px;
+}
+
+.tree__whreath {
+	position: relative;
+}
+
+.whreath {
+	position: absolute;
+    top: 553px;
+    left: 600px;
+	transform: scale(0.6);
+}
+
+.whreath:hover {
+	top: 220px;
+    left: 592px;
+	transform: scale(1);
+}
+
+.gift {
+	transform: translate(700px, 495px);
+}
+
+.gift__body {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	transition: all 0.8s ease 0s;
+	transform-style: preserve-3d;
+}
+
+.gift__front, .gift__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gift__front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background: url(../img/icons8-christmas-gift-100.png) no-repeat center;
+	backface-visibility: hidden;
+	transform: scale(1.3);
+}
+
+.gift__back {
+	transform: rotateY(-180deg);
+	background: url(../img/icons8-cup-100.png) no-repeat center;
+}
+
+.gift:hover .gift__body {
+	transform: rotateY(-180deg);
+}
+
+.hat {
+	transform: translate(7800px, -129px);
+}
+
+.hat:hover {
+	transform: translate(840px, -129px) rotate(30deg);
+}
