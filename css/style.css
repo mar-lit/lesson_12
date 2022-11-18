@@ -144,7 +144,7 @@ h1 {
 
 .whreath:hover {
 	top: 220px;
-    left: 650px;
+    left: 592px;
 	transform: scale(1);
 }
 
@@ -189,9 +189,9 @@ h1 {
 }
 
 .hat {
-	transform: translate(840px, -129px);
+	transform: translate(780px, -129px);
 }
 
 .hat:hover {
-	transform: translate(840px, -129px) rotate(30deg);
+	transform: translate(780px, -129px) rotate(30deg);
 }
